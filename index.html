@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Generador de Clase C#</title>
+	<link rel="stylesheet" href="index.css">
+	<script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.48.0/min/vs/loader.min.js"></script>
+</head>
+<body>
+	<div id="container" class="split-view">
+		<div id="modeler" class="col">
+			<h2>Modelador</h2>
+			<button id="nuevoModelo">Nuevo modelo</button>
+			<div id="formulario"></div>
+		</div>
+		<div id="separator" class="separator"></div>
+		<div id="model" class="col">
+			<h2>Clase C# generada</h2>
+			<div id="editor" class="my-editor"></div>
+		</div>
+	</div>
+	<script src="index.js"></script>
+	<script src="scripts/editor.js"></script>
+	<script src="scripts/resize.js"></script>
+</body>
+</html>
