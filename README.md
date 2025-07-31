@@ -24,9 +24,9 @@
 
 ## Instalación
 
-1. Clona este repositorio: ``git clone https://github.com/usuario/nombre-repo.git
+1. Clona este repositorio: `git clone https://github.com/usuario/nombre-repo.git`
 2. Abre `index.html` en tu navegador moderno favorito.
-3. **Si usas módulos ES6**: abre el proyecto desde un servidor local (por ejemplo, con [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) en VSCode o ejecuta en terminal): ``npx live-server
+3. **Si usas módulos ES6**: abre el proyecto desde un servidor local (por ejemplo, con [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) en VSCode o ejecuta en terminal): `npx live-server`
 
 ## Uso
 
@@ -50,7 +50,6 @@
     /README.md
 ```
 
-
 ## Tecnologías utilizadas
 
 - JavaScript ES6+
@@ -61,7 +60,7 @@
 ## Contribución
 
 1. Haz un fork del repositorio.
-2. Crea una rama para tu feature o corrección: ``git checkout -b nombre-feature
+2. Crea una rama para tu feature o corrección: `git checkout -b nombre-feature`
 3. Haz tus cambios y commitea.
 4. Abre un Pull Request.
 
