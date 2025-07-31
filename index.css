@@ -44,18 +44,13 @@ html, body {
     }
 }
 
-.modeler {
-    
+.col.right {
+    width: 30%;
 }
 
-/* .code {
-    background-color: #f5f5f5;
-    border-radius: 0.5rem;
-    overflow: auto;
-    text-align: left;
-    border: #f5f5f5 solid 1px;
-    height: 90%;
-} */
+.col.left {
+    width: 70%;
+}
 
 .my-editor {
     height: 90%;
@@ -67,4 +62,88 @@ html, body {
     -moz-box-shadow: 5px 5px 18px -1px rgba(0,0,0,0.49);
     -webkit-box-shadow: 5px 5px 18px -1px rgba(0,0,0,0.49);
     box-shadow: 5px 5px 18px -1px rgba(0,0,0,0.49);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form label {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center; 
+    width: 100%;
+    border: 1px solid lightgray;
+    padding: 1%;
+}
+
+.form label > span{
+    width: 24%;
+    margin-right: 1%;
+}
+
+.form label > select {
+  width: auto;
+}
+
+.form label > textarea ,
+.form label > input:not([type="checkbox"]) {
+  width: 75%;
+}
+
+.form label > input[type="checkbox"] {
+  width: auto;
+}
+
+.btn-danger {
+  background-color: #f44336;    /* Rojo brillante, color típico de eliminar */
+  color: #fff;                  /* Texto blanco */
+  border: none;
+  border-radius: 6px;
+  padding: 7px 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background 0.18s, transform 0.09s;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: #c62828;      /* Un rojo más oscuro en hover */
+  transform: scale(1.04);
+  outline: none;
+}
+
+.btn-danger:active {
+  background-color: #b71c1c;
+  transform: scale(0.97);
+}
+
+.btn-success {
+  background-color: #43a047;      /* Verde, color de acción positiva */
+  color: #fff;                    /* Texto blanco */
+  border: none;
+  border-radius: 6px;
+  padding: 7px 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background 0.18s, transform 0.09s;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+  background-color: #2e7d32;    /* Un verde más oscuro en hover */
+  transform: scale(1.04);
+  outline: none;
+}
+
+.btn-success:active {
+  background-color: #1b5e20;
+  transform: scale(0.97);
 }

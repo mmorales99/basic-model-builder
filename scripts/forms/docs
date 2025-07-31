@@ -1,0 +1,33 @@
+// quiero hacer un generador de clases C#
+// que permita crear clases C# de forma visual
+// y que genere el código automáticamente
+// el modelo será un objeto con nombre, tipo de clase, visibilidad, padre y componentes
+// los componentes pueden ser atributos, propiedades o métodos
+// los tipos de visibilidad serán public, private, protected e internal
+// los tipos de clase seran class, struct, interface, record, enum, delegate y abstract class
+// un padre es una clase de la que hereda
+// el modelo se guardará en un objeto JSON
+// cada componente tendrá nombre, tipo, visibilidad y código (si es un método o un constructor o una propiedad o un destructor o un evento)
+// el tipo de componente puede ser campo, propiedad, método, constructor, destructor o evento
+// si es un campo, tendrá un tipo y un nombre, el tipo puede ser cualquier tipo de C# o un tipo complejo definido por el usuario
+// si es una propiedad, tendrá un tipo, un nombre y un campo asociado (get y set)
+// si es un método, tendrá un tipo de retorno, un nombre, una lista de parámetros y un código
+// si es un constructor, tendrá un nombre (igual que la clase), una lista de parámetros
+// si es un destructor, tendrá un nombre (igual que la clase), una lista de parámetros
+// si es un evento, tendrá un tipo, un nombre y un código asociado
+// el modelo y sus elementos podrán tener modificadores de acceso (public, private, protected, internal)
+// tambien puede tener modificadores de clase (abstract, sealed, static, partial, unsafe) y modificadores propios (static, virtual, override, new, abstract, sealed, async, unsafe, extern, params, ref y out) 
+// además de atributos personalizados como [Serializable], [Obsolete], [DebuggerDisplay], [DataContract], [DataMember], etc.
+// el código generado será C#
+// el formulario permitirá crear, editar y eliminar componentes
+// el editor se acutalizará automáticamente al modificar el modelo
+// el código generado se mostrará en el editor
+// las ediciones hechas en el editor se reflejarán en el formulario y en el modelo
+
+// reglas para los componentes:
+// - los campos no pueden tener código, solo tipo y nombre y siempre seran privados
+// - las propiedades deben tener un tipo, un nombre y un campo asociado [si no se informa, se autogenera] (get y set; puede modificarse la implementación del get y set); por defecto serán publicas
+// - los métodos deben tener un tipo de retorno, un nombre, una lista de parámetros y un código; por defecto serán publicos
+// - los constructores deben tener un nombre (igual que la clase) y una lista de parámetros; por defecto serán publicos
+// - los destructores deben tener un nombre (igual que la clase) y una lista de parámetros; por defecto serán publicos
+// - los eventos deben tener un tipo, un nombre y un código asociado; por defecto serán publicos
