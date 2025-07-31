@@ -39,22 +39,36 @@
 
 ```
     /index.html
-    /js/
-    ├─ main.js
-    ├─ modelo.js
+    /index.css
+    /index.js
+    /scripts
+    ├─ app.js
+    ├─ constants.js
     ├─ editor.js
-    ├─ utilidades.js
-    /css/
-    ├─ estilos.css
-    └─ tema-dark.css
+    ├─ resize.js
+    ├─ /forms
+    |   ├─ docs
+    |   ├─ newComponent.js
+    |   ├─ newModel.js
+    |   └─ forms.js
+    ├─ /models
+    |   ├─ campo.js
+    |   ├─ componente.js
+    |   ├─ componenteFactory.js
+    |   ├─ constructor.js
+    |   ├─ destructor.js
+    |   ├─ metodo.js
+    |   ├─ modelo.js
+    |   └─ propiedad.js
     /README.md
+    /LICENSE.md
 ```
 
 ## Tecnologías utilizadas
 
 - JavaScript ES6+
 - HTML5 y CSS3 (Flexbox, gap, estilos modernos)
-- Monaco Editor y/o Prism.js para edición y resaltado de código
+- Monaco Editor para edición y resaltado de código
 - [Opcional] Herramientas externas según necesidades
 
 ## Contribución
